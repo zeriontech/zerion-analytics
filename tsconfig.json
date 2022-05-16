@@ -1,0 +1,17 @@
+{
+  "include": ["src"],
+  "exclude": ["examples"],
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "pretty": true,
+    "jsx": "react",
+    "lib": ["esnext", "dom"]
+  }
+}

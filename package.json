@@ -1,0 +1,36 @@
+{
+  "name": "zerion-analytics",
+  "version": "0.0.1",
+  "description": "Zerion analytics integration script",
+  "scripts": {
+    "start": "parcel src/test.html",
+    "build:umd": "microbundle --external none -i src/index.ts -o lib/zerion-analytics.umd.js --no-pkg-main -f umd --define process.env.NODE_ENV=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeriontech/zerion-analytics.git"
+  },
+  "keywords": [
+    "defi",
+    "sdk",
+    "zerion",
+    "api",
+    "client",
+    "analytics"
+  ],
+  "author": "zerts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeriontech/zerion-analytics/issues"
+  },
+  "homepage": "https://github.com/zeriontech/zerion-analytics#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "microbundle": "^0.15.0",
+    "parcel": "^2.5.0",
+    "posthtml-expressions": "^1.9.0"
+  },
+  "dependencies": {
+    "defi-sdk": "^0.1.0-alpha.36"
+  }
+}
