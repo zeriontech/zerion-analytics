@@ -14,12 +14,11 @@ function initZerionAnalytics() {
   client.configure({ url: endpoint, apiToken: api_key });
 
   window.registerWeb3User = (address: string) => {
-    const { unsubscribe } = client.addressPortfolio(
+    const { unsubscribe } = client.addressPortfolioDecomposition(
       {
         address,
         currency: "usd",
-        portfolio_fields: "all",
-        use_portfolio_service: true,
+        nft_price_type: "not_included",
       },
       {
         onData: () => {
